@@ -14,8 +14,8 @@ O objetivo principal foi criar um sistema utilizando à arquitetura limpa utiliz
 - **Banco de dados**: MySQL
 - **Mensageria**: RabbitMQ
 - **Ferramentas Necessárias**:
-  - Migration para criar o banco de dados "orders" e sua tabela.
-  - Evans instalado para usar como cliente do gRPC.
+  - Migration para criar o banco de dados "orders" e sua tabela. (Somente se usar o devcontainer)
+  - Evans instalado para usar como cliente do gRPC. (Somente se usar o devcontainer)
   - Extensão Rest Client instalada no VS Code.
 
 ## Configuração
@@ -84,6 +84,7 @@ O objetivo principal foi criar um sistema utilizando à arquitetura limpa utiliz
    - Execute o comando `call ListOrders` para iniciar a chamada de listagem.
 
 OBS: Use o docker-compose da raiz do projeto para ter o mysql já configurado sem a necessidade de usar o comando make.
+OBS: O .env já esta configurado, ao usar docker compose up, o projeto já vai estar funcionando na porta 8080(GRAPHQL) e 8000(REST)
+OBS: Acesse o container do app para usar o EVANS
 
 docker compose up
-no .env use localhost como HOST
